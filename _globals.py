@@ -20,6 +20,5 @@ __files__ = [
 
 class PATH:
     ROOT = Path(".")
-    DATA = ROOT/'covid19pt-data'
+    DATA = ROOT/"covid19pt-data"
     data = DATA/"data.csv"
-    
