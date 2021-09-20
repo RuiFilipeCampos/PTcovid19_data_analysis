@@ -30,7 +30,11 @@ for file_name in __files__:
     setattr(PATH, file_name[:-4], PATH.DATA/file_name)
 
 # importing pyKinetics from submodule
-
+import sys
+sys.path.append(
+    str(PATH.PYKINETICS)
+    )
+import pyKinetics as pk
 
 
     
