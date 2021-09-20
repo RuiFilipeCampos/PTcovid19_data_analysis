@@ -21,9 +21,16 @@ __files__ = [
 class PATH:
     ROOT = Path(".")
     DATA = ROOT/"covid19pt-data"
+    PYKINETICS = ROOT/"pyKinetics"
     #data = DATA/"data.csv"
     #data_concelhos = DATA/"data_concelhos.csv"
 
+# setting up all available data files
 for file_name in __files__:
-    setattr(PATH, file_name[:-4], PATH.DATA/file_name) 
+    setattr(PATH, file_name[:-4], PATH.DATA/file_name)
+
+# importing pyKinetics from submodule
+
+
+
     
