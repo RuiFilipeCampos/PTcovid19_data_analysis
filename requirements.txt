@@ -1,2 +1,4 @@
-pyKinetics
 pandas
+numpy
+matplotlib
+pathlib

@@ -21,4 +21,9 @@ __files__ = [
 class PATH:
     ROOT = Path(".")
     DATA = ROOT/"covid19pt-data"
-    data = DATA/"data.csv"
+    #data = DATA/"data.csv"
+    #data_concelhos = DATA/"data_concelhos.csv"
+
+for file_name in __files__:
+    setattr(PATH, file_name[:-4], PATH.DATA/file_name) 
+    
